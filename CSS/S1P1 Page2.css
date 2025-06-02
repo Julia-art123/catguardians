@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Afacad Flux;
+    font-size: 24pt;
+}
+/*navigation*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #00a9b2;
+    height: 80px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    padding:80px 50px 85px;
+    z-index: 10;
+}
+
+.logo{
+    width:180px;
+}
+.nav-link li a{
+    text-decoration: none;
+    font-size: 24pt;
+    font-family: Afacad Flux;
+    color:black;
+}
+.nav-link li{
+    list-style:none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+.nav-link >li:hover::before {
+    content: '';
+    display: block;
+    position: absolute; 
+    top: -40px; 
+    left: 0;
+    width: 100%; 
+    height: 4px;
+    background-color: black;
+}
+/*button*/
+button{
+    border:none;
+    font-size: 24pt;
+    font-family:Afacad Flux;
+    font-weight: 500;
+    color: white;
+    padding: 5px 30px;
+    background-color: #005d5c;
+    border-radius: 5px;
+    margin: 20px;
+}
+button:hover{
+    background-color: #f39b41;
+    color: white;
+    transition: 0.2s ease 0;
+}
+/*nav drop-down*/
+.drop-down{
+    position:absolute;
+    background-color: #00a9b2;
+    width: 180px;
+    left:-15px;
+    margin-top:10px;
+    padding-top:6px;
+    text-align: center;
+    display: none;
+    z-index: 10;
+}
+
+ul li:hover ul.drop-down{
+    display: block;
+}
+
+.drop-down li a:hover{
+    text-shadow: 2px 3px 3px #f39b41;
+}
+
+/*section 1*/
+.page2-cover{
+    width: 500px;
+    margin-left: 50px;
+    filter: brightness(60%);
+}
+.card{
+    position: relative;
+}
+.card-text1{
+    position: absolute;
+    top:57%;
+    left: 15%;
+    right: 5%;
+    font-weight: 700;
+    font-size: 36pt;
+    color: white;
+    line-height: 1.5em;
+}
+.section1 {
+    display: flex;
+    align-items: flex-start; 
+    margin-top: 200px;
+    padding: 20px;
+}
+.main-text {
+    margin-left: 70px; 
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+.main-text p{
+    margin-top: 30px;
+    width: 90%;
+}
+.main-text h2{
+    color: #005d5c;
+}
+/*transition*/
+.transition{
+    margin: 80px 150px 10px;
+    text-align: justify;
+}
+
+/* 容器用于布局四个部分 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+/* 每个部分的基础布局 */
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* 图片在左边的部分 */
+.section.left {
+    flex-direction: row;
+}
+
+/* 图片在右边的部分 */
+.section.right {
+    flex-direction: row;
+}
+
+/* 圆形图片 */
+.circle-img {
+    position: relative;
+    width: 70%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00a9b2;
+    margin: 0 150px;
+    border: 15px solid #005d5c;
+}
+
+.circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.circle-text {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 24pt;
+    text-align: center;
+    z-index: 1;
+}
+
+/* 文字部分 */
+.text {
+    margin-left: 200px;
+    margin-right: 150px;
+    text-align: justify;
+}
+
+/* 为圆形图片之间添加斜线 */
+.section.left::after{
+    content: '';
+    position: absolute;
+    height: 1100px;
+    width: 10px; /* 根据需要调整线条长度 */
+    background-color: #005d5c;
+    top: -225%;
+    left: 700px; /* 起点 */
+    transform-origin: left;
+    transform: rotate(70deg); /* 旋转线条 */
+    z-index: -1;
+}
+
+.section.left:first-of-type::after {
+    content: none;
+}
+
+.section.right::after {
+    content: '';
+    position: absolute;
+    height: 1100px;
+    width: 10px; /* 根据需要调整线条长度 */
+    background-color: #005d5c;
+    top: -240%;
+    left: 700px; /* 起点 */
+    transform-origin: left;
+    transform: rotate(-70deg); /* 根据需要调整角度 */
+    z-index: -1;
+}
+.last-call{
+    margin-left: 200px;
+    font-style: italic;
+    font-size: 36pt;
+    margin-top:-100px;
+    margin-bottom: 60px;
+    text-shadow: -2px -2px 5px #f39b41;
+}
+
+/*footer*/
+footer h2{
+    font-size: 30pt;
+    font-weight: 500;
+    padding-top: 30px;
+}
+footer h3{
+    font-size: 20pt;
+    margin-top: 20px;;
+}
+.footer-content p{
+    margin-top: 30px;
+    font-weight: 900 ;
+}
+footer{
+    text-align: center;
+    font-size: 18pt;
+    padding-bottom: 10px;
+    background-color: #00a9b2;
+}
+footer p{
+    margin-top: 30px;
+}
+.box{
+    width: 30%;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.box2 ul li a{
+    color:black
+}
+.box2 ul li{
+    list-style: none;
+}
+.box2 ul{
+    padding-top: 30px;
+}
+.box2 ul li a:hover{
+    text-shadow: 2px 2px 2px #f39b41;
+}
+.footer-columns {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    margin-left: 150px;
+}
+
+.icons{
+    margin-top: 50px;
+}
+.icons i{
+    width: 25px;
+}

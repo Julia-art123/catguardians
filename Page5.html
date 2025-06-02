@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Contact Us</title>
+<!--CSS-->
+<link rel="stylesheet" href="CSS/S1P1 Page5.css">
+<!--imported fonts from google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+<link rel="icon" href="Images/logo on teal.png" type="image/x-icon">
+<!--Font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<header>
+    <img class="logo" src="Images/logo on teal.png" alt="logo">
+    <nav>
+        <ul class="nav-link">
+            <li><a href="Page1.html">Home</a></li>
+            <li><a href="#">Cat Care</a>
+                <ul class="drop-down">
+                    <li><a href="Page2.html">Domestic Cat</a></li>
+                    <li><a href="Page3.html">Stray Cat</a></li>
+                 </ul>
+        </li>
+            <li><a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <div><a href="#"><button>Donate</button></a>
+    <a href="Page4.html"><button>Adopt</button></a></div>
+    </header>
+<body>
+    <div class="section1">
+        <div class="card">
+            <img class="page5-cover" src="Images/page 5 cover.jpg" alt="A landscape photo of two cats sitting on a cat tree.">
+            <div class="card-text1">
+                <h1>Contact <br>Information</h1>
+                <p class="spacing">Tel: 123-456-7890</p>
+            <p>Email: catguardians@org.com</p>
+            <p>Media: media@catguardians</p>
+            <div class="icons">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i></div>
+            </div>
+        </div>
+    </div>
+<!--Contace Us Form-->
+<div class="container">
+<div class="box">
+<div class="page5-text">
+<h2>Contact Us</h2>
+<p class="spacing1">If you have any questions or would like to get in touch, feel free to contact us through the form below:</p></div>
+<div class="contact-form">
+    <form action="/submit" method="post">
+    <h2 class="contact-title">Contact Form</h2>
+    <label for="name">Name:</label>
+    <div class="name-field">
+    
+    <input type="text" id="name" placeholder="Your first name" required>
+
+ <input type="text" id="name" placeholder="Your last name" required>
+    </div>
+
+    <label for="email">Email:</label>
+    <input type="email"id="email"placeholder="Your email address" required>
+
+    <label for="message">Message:</label>
+    <textarea rows="3" placeholder="Type your message" required></textarea>
+   
+    
+    <div><label for="rating">Rate our website</label>
+    <select name="rating" id="rating" required>
+        <option value="" disabled selected>Please select an option</option>
+        <option value="1">Excellent</option>
+        <option value="2">Good</option>
+        <option value="3">Average</option>
+        <option value="4">Poor</option>
+    </select>
+    </div>
+
+    <div><button class="send-message" type="submit">Send Message</button></div>
+    </form>
+</div>
+</div>
+<div class="box">
+    <div class="page5-text">
+        <h2>Donate Now!</h2>
+        <p class="spacing1">Your donation can make a real difference. Whether it's providing food, shelter, or essential medical care, your donation helps us continue our mission. Thank you for your support!</p></div>
+    <div class="donate-form">
+        <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <div class="name-field">
+        
+        <input type="text" id="name" placeholder="Your first name" required>
+    
+     <input type="text" id="name" placeholder="Your last name" required>
+        </div>
+    
+        <label for="message">Message:</label>
+        <textarea rows="3" placeholder="Send a private message to us(optional)" ></textarea>
+       
+        <label for="donation-amount" id="donation-amount">Donation Amount:</label>
+        <div class="donation-amount">
+            <button type="button" data-amount="15" class="donation-button">$15</button>
+            <button type="button" data-amount="25" class="donation-button">$25</button>
+            <button type="button" data-amount="35" class="donation-button">$35</button>
+            <button type="button" data-amount="80" class="donation-button">$80</button>
+        </div>
+        <input type="hidden" name="selected-amount" id="selected-amount">
+        <div><button class="give-now" type="submit">Give Now</button></div>
+        </form>
+    </div>
+</div>
+</div>
+<script src="JS/Page5.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+            <h2>Cat guardians</h2>
+    <p>If you witness any cruelty or abuse towards cats, please contact us immediately.</p>
+    </div>
+    <div class="footer-columns">
+    <div class="box1">
+        <h3>Our Mission</h3>
+        <p>We are dedicated to improving the lives of both domestic and stray cats. By promoting responsible cat care, adoption, and community involvement, we aim to reduce the number of homeless cats and ensure that every feline finds a safe and loving home.</p>
+    </div>
+    <div class="box1">
+        <div class="box2">
+            <h3>Quick links</h3>
+        <ul>
+            <li><a href="Page1.html">Home</a></li>
+            <li><a href="Page2.html">Domestic Cats</a></li>
+            <li><a href="Page3.html">Stray Cats</a></li>
+            <li><a href="Page5.html">Donate</a></li>
+            <li><a href="Page4.html">Adopt</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="box1">
+        <h3>Contact</h3>
+        <p>Tel: 123-456-7890</p>
+        <p>Email: catguardians@org.com</p>
+        <p>Media: media@catguardians</p>
+    </div>
+    </div>
+    <a href="Page5.html"><button>Support Us</button></a>
+
+</footer>
+</html>
